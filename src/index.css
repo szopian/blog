@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap");
+:root {
+  --primary-color: #e42c6a;
+  /* --bg-color: #df678c; */
+  --font-color: #333;
+  --border-color: #cae7df;
+  --shadow: inset 2px 2px 2px rgba(187, 187, 187, 0.4),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.2);
+}
 
 * {
   margin: 0;
   font-family: "Advent Pro", sans-serif;
-  color: #333;
+  color: var(--font-color);
+  background-color: var(--bg-color);
 }
 .navbar {
   padding: 20px;
@@ -11,10 +20,10 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid var(--border-color);
 }
 .navbar h1 {
-  color: #f1356d;
+  color: var(--primary-color);
 }
 .navbar .links {
   margin-left: auto;
@@ -25,7 +34,7 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: var(--primary-color);
 }
 .content {
   max-width: 600px;
@@ -34,17 +43,23 @@
 }
 
 /* blog */
+.home {
+  align-items: center;
+  justify-content: center;
+}
+
 .blog-preview {
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-radius: 10px;
+  border-bottom: 1px solid var(--border-color);
 }
 .blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--primary-color);
   margin-bottom: 8px;
 }
 
@@ -55,14 +70,14 @@
 /* blog details page */
 .blog-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 .blog-details div {
   margin: 20px 0;
 }
 .blog-details button {
-  background: #f1356d;
+  background: var(--primary-color);
   color: #fff;
   border: 0;
   padding: 8px;
@@ -82,7 +97,7 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--primary-color);
   margin-bottom: 30px;
 }
 .create input,
@@ -96,18 +111,19 @@
   display: block;
 }
 .create button {
-  background: #f1356d;
+  background: var(--primary-color);
   color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 /* Not Found Page */
 .not-found h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--primary-color);
   margin-bottom: 8px;
 }
 .not-found p {
@@ -115,7 +131,7 @@
 }
 .not-found a {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--primary-color);
   text-decoration: none;
 }
 .not-found a:hover {

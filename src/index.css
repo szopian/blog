@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap");
 :root {
-  --primary-color: #f1356d;
+  --primary-color: #e42c6a;
+  /* --bg-color: #df678c; */
   --font-color: #333;
-  --border-color: #f2f2f2;
+  --border-color: #cae7df;
   --shadow: inset 2px 2px 2px rgba(187, 187, 187, 0.4),
     inset -2px -2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -11,6 +12,7 @@
   margin: 0;
   font-family: "Advent Pro", sans-serif;
   color: var(--font-color);
+  background-color: var(--bg-color);
 }
 .navbar {
   padding: 20px;
@@ -38,13 +40,15 @@
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+}
+
+/* blog */
+.home {
   align-items: center;
   justify-content: center;
 }
 
-/* blog */
 .blog-preview {
-  width: 80%;
   padding: 10px 16px;
   margin: 20px 0;
   border-radius: 10px;
@@ -113,6 +117,7 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 /* Not Found Page */
